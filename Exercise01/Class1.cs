@@ -68,7 +68,7 @@ namespace Exercise01
             }
         }
 
-        public decimal FindFinalScoreForSpecialNeedsStudent(decimal finalTest, decimal test1, decimal test2, decimal quiz1, decimal popQuiz1, decimal popQuiz2, decimal popQuiz3, decimal popQuiz4, decimal popQuiz5)
+        private decimal FindFinalScoreForSpecialNeedsStudent(decimal finalTest, decimal test1, decimal test2, decimal quiz1, decimal popQuiz1, decimal popQuiz2, decimal popQuiz3, decimal popQuiz4, decimal popQuiz5)
        {
             // Sets the weights of the grades
             const decimal finalWeight = 0;
@@ -79,7 +79,7 @@ namespace Exercise01
             return ((finalTest * finalWeight + test1 * testWeight + test2 * testWeight + quiz1 * quizWeight + popQuiz1 * popQuizWeight + popQuiz2 * popQuizWeight + popQuiz3 * popQuizWeight + popQuiz4 * popQuizWeight + popQuiz5 * popQuizWeight) / (finalWeight + testWeight * 2 + quizWeight + popQuizWeight * 5));
         }
 
-        public decimal FindFinalScoreForAdvancedStudent(decimal finalTest, decimal test1, decimal test2, decimal quiz1, decimal popQuiz1, decimal popQuiz2, decimal popQuiz3, decimal popQuiz4, decimal popQuiz5)
+        private decimal FindFinalScoreForAdvancedStudent(decimal finalTest, decimal test1, decimal test2, decimal quiz1, decimal popQuiz1, decimal popQuiz2, decimal popQuiz3, decimal popQuiz4, decimal popQuiz5)
         {
             // Sets the weights of the grades
             const decimal finalWeight = 100;
@@ -90,7 +90,7 @@ namespace Exercise01
             return ((finalTest * finalWeight + test1 * testWeight + test2 * testWeight + quiz1 * quizWeight + popQuiz1 * popQuizWeight + popQuiz2 * popQuizWeight + popQuiz3 * popQuizWeight + popQuiz4 * popQuizWeight + popQuiz5 * popQuizWeight) / (finalWeight + testWeight * 2 + quizWeight + popQuizWeight * 5));
          }
 
-        public decimal FindFinalScoreForRegularStudent(decimal finalTest, decimal test1, decimal test2, decimal quiz1, decimal popQuiz1, decimal popQuiz2, decimal popQuiz3, decimal popQuiz4, decimal popQuiz5)
+        private decimal FindFinalScoreForRegularStudent(decimal finalTest, decimal test1, decimal test2, decimal quiz1, decimal popQuiz1, decimal popQuiz2, decimal popQuiz3, decimal popQuiz4, decimal popQuiz5)
         {
             // Sets the weights of the grades
             const decimal finalWeight = 50;
